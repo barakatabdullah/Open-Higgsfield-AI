@@ -23,18 +23,39 @@
     "appId": "ai.higgsfield.open",
     "productName": "Open Higgsfield AI",
     "copyright": "Copyright © 2025",
-    "directories": { "output": "release" },
+    "directories": {
+      "output": "release"
+    },
     "afterPack": "./afterPack.js",
-    "files": ["dist/**/*", "electron/**/*"],
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
     "mac": {
       "category": "public.app-category.graphics-design",
       "icon": "public/banner.png",
       "gatekeeperAssess": false,
-      "target": [{ "target": "dmg", "arch": ["x64", "arm64"] }]
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
     },
     "win": {
       "icon": "public/banner.png",
-      "target": [{ "target": "nsis", "arch": ["x64", "arm64"] }]
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
     }
   },
   "dependencies": {
@@ -55,6 +76,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
     "vite": "^5.4.0",
-    "@tailwindcss/vite": "^4.1.18"
+    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/postcss": "^4.1.18"
   }
 }
